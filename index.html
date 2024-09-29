@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- 2番目にfont awesome 3番目にgoogle font 4番目にbootstrap icon-->
+    <!--slick-theme.cssはslickのサイトの「Add slick.css in your <head>」の2行目を貼り付ける-->
+    <link rel="stylesheet" href="reset-special.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="style.css">
+    <!--最後の2つのslickはslickからダウンロードしてslick-1.8をslickにして書き換えたもの-->
+    <title>レスポンシブ対応20211214tax</title>
+</head>
+<body>
+    <div id="wrapper">
+         <div id="tax-top">
+               <i class="fas fa-yen-sign fa-5x" id="yen"></i>
+               <h1>税金</h1>
+         </div>
+         <div id="tax-main">
+            <div class="tax-title"><h2>市税</h2></div>
+            <div id="shizei-chart">
+                 <table>
+                     <thead>
+                         <tr>
+                             <th rowspan="2" id="center" class="title"><p>種類</p></th>
+                             <th colspan="2" class="title"><p>問い合わせ先</p></th>
+                         </tr>
+                         <tr>
+                             <th id="kazei" class="title"><p>課税について</p></th>
+                             <th id="nouhu" class="title"><p>納付について</p></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                          <tr>
+                              <th class="light-green tax" width="auto"><h3>個人市民税<span id="option">(給与からの特別徴収除く)</span></h3></th>
+                              <td width="40%"><p>各区課税課(市民税係)⇨P.22～25</p></td>
+                              <td rowspan="4" id="center" width="20%"><p>各区納税課⇨P.22～25</p></td>
+                          </tr>
+                          <tr>
+                              <th class="light-green" id="light-car"><h3>軽自動車税</h3><span id="option">(原動機付自転車(125cc以下のバイク)及び小型特殊自動車の取得・譲渡・廃車手続き)</span></th>
+                              <td><p>各区課税課(管理係)⇨P.22～25</p></td>
+                          </tr>
+                          <tr>
+                            　<th class="light-green tax"><h3>固定資産税・都市計画税(土地・家屋)</h3></th>
+                            　<td><p>各区課税課(固定資産税土地係・家屋係)⇨P.22～25</p></td>
+                        　</tr>
+                        　<tr>
+                            　<th class="light-green tax"><h3>固定資産税(償却資産)</h3></th>
+                            　<td class="zaisei"><p>財政局資産課税課<span><i class="fas fa-phone"></i></span>711-4438<span>Ⓕ</span>733-5902</p></td>
+                        　</tr>
+                          <tr>
+                            　<th class="light-green tax"><h3>個人市民税<span id="option">(給与からの特別徴収)</span></h3></th>
+                            　<td><p>財政局法人税務課<span><i class="fas fa-phone"></i></span>711-4211<span>Ⓕ</span>733-5556</p></td>
+                              <td rowspan="4"><p>財政局特別滞納整理係<span><i class="fas fa-phone"></i></span>711-4215<span>Ⓕ</span>711-4219</p></td>
+                        　</tr>
+                          <tr>
+                            　<th class="light-green tax"><h3>法人市民税</h3></th>
+                            　<td><p>財政局法人税務課<span><i class="fas fa-phone"></i></span>711-4194<span>Ⓕ</span>733-5556</p></td>
+                        　</tr>
+                          <tr>
+                            　<th class="light-green tax"><h3>事業所税、市たばこ税、入湯税</h3></th>
+                            　<td><p>財政局資産課税課<span><i class="fas fa-phone"></i></span>711-4195<span>Ⓕ</span>733-5902</p></td>
+                        　</tr>
+                          <tr>
+                            　<th class="light-green tax"><h3>宿泊税</h3></th>
+                            　<td><p>財政局資産課税課<span><i class="fas fa-phone"></i></span>711-4591<span>Ⓕ</span>733-5902</p></td>
+                        　</tr>
+                          <tr>
+                            　<th class="light-green tax"><h3>市税の不服申し立て</h3></th>
+                            　<td colspan="2"><p>財政局税制課<span><i class="fas fa-phone"></i></span>711-4591<span>Ⓕ</span>733-5902</p></td>
+                        　</tr>
+                     </tbody>
+                 </table>
+            </div><!--shizei-chartのdiv-->
+            <div id="tax-shoumei">
+                 <div class="tax-title"><h2>市税に関する証明・閲覧</h2></div>
+                 <div class="tax-contents">
+                    <h3><span><i class="fas fa-square-full"></i></span>証明や閲覧を請求できる人(原則として次の人に限る)</h3>
+                    <p>・本人(相続人、納税管理人も含まれます。相続人等であることを証する書類が必要)</p>
+                    <p>・本人の委任状、承諾書などを持参した人(家族の場合でも委任状が必要)</p>
+                    <p>・法人の場合は代表権のある人(それ以外の人は委任状が必要)</p>
+                 </div>
+                 <div class="tax-contents">
+                　　 <h3><span><i class="fas fa-square-full"></i></span>請求に必要なもの</h3>
+                   　<p>【個人の場合】本人(請求する人)であることを確認できる公的な証明書(マイナンバーカードや運転免許書、パスポートなど)</p>
+                   　<p>【法人の場合】法人印と代表者の職印(印鑑に法人名がない場合や法人名の表記が異なる印鑑を利用される場合は、法人印の「印鑑証明書」をご持参ください。)</p>
+                 </div>
+                 <div id="shoumei-chart">
+                     <table>
+                           <thead>
+                                  <tr>
+                                      <th class="title"><p>種類</p></th>
+                                      <th class="title"><p>手数料(1件)</p></th>
+                                      <th class="title"><p>相談窓口</p></th>
+                                  </tr>
+                           </thead>
+                           <tbody>
+　　　　　　　　　　　　　　　　　　　<tr>
+                                      <th class="light-green document"><h3>納税証明書</h3></th>
+                                      <td rowspan="6" id="center"><p>300円</p></td>
+                                      <td rowspan="8" id="center">
+                                          <p>
+                                              各区課税課(管理係)、各主張所(市民係)⇨p.22～25
+                                          </p>
+                                          <p>
+                                              福岡市税収納管理センター
+                                          </p>
+                                          <p>
+                                            <span><i class="fas fa-phone"></i></span>711-4990
+                                            <span>Ⓕ</span>711-7219
+                                            <span><i class="far fa-clock"></i></span>平日8:45～17:15
+                                          </p>
+                                          <p>
+                                            千早証明サービスコーナー
+                                          </p>
+                                          <p> 
+                                              <span><i class="fas fa-phone"></i></span>674-3983
+                                              <span>Ⓕ</span>674-3974
+                                              <span><i class="far fa-clock"></i></span>平日8:45～17:15
+                                          </p>
+                                          <p>
+                                              各区課税課(管理係)、各主張所<br>
+                                              <span><i class="far fa-clock"></i></span>平日8:45～17:15
+                                          </p>
+                                          <p>
+                                              住宅都市局建築指導課<br>
+                                              <span><i class="far fa-clock"></i></span>9:00～16:30
+                                         </p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th class="light-green document"><h3>市県民課税・非課税証明書(所得証明書)<span class="chart-kome">※</span></h3></th>
+                                  </tr>
+                                  <tr>
+                                    <th class="light-green document"><h3>固定資産公課証明書</h3></th>
+                                　</tr>
+                                  <tr>
+                                    <th class="light-green document"><h3>固定資産評価証明書</h3></th>
+                                　</tr>
+                                　<tr>
+                                    <th class="light-green document"><h3>市税に係る徴収金に滞納がないことの証明書</h3></th>
+                                　</tr>
+                                　<tr>
+                                    <th class="light-green document"><h3>無産証明書</h3></th>
+                                　</tr>
+                                　<tr>
+                                    <th class="light-green document"><h3>軽自動車税(継続検査用)納税証明書<span class="chart-kome">※</span></h3></th>
+                                    <td id="center"><p>無料</p></td>
+                                　</tr>
+                                　<tr>
+                                    <th class="light-green document"><h3>住宅用家屋証明書</h3></th>
+                                    <td id="center"><p>1,300円</p></td>
+                                　</tr>
+                                  <tr>
+                                      <th class="light-green document"><h3>固定資産課税台帳の閲覧</h3></th>
+                                      <td id="center" width="20%"><p>無料</p><p id="ten">(写しは10円/枚)</p></td>
+                                      <td id="top" width="30%"><P>各区課税課<br>福岡市税収納管理センター</P></td>
+                                  </tr>
+                           </tbody>
+                     </table>
+                 </div><!--shoumei-chartのdiv-->
+                 <div id="main-bottom">
+                      <div class="bottom-contents"><h3>資料請求</h3><P>⇨p.31</p></div>
+                      <div class="bottom-contents"><h3>オンライン申請</h3><P>⇨p.31</p></div>
+                    　<div class="bottom-contents"><h3>郵便局(窓口での請求)</h3><P>⇨p.31</p></div>
+                 </div>
+            </div><!--tax-shoumeiのdiv-->
+         </div><!--tax-mainのdiv-->
+         <div id="tax-sub">
+               <div id="method">
+                   <div class="tax-title"><h2>便利な市税納入方法</h2></div>
+                   <p>
+                       ▶口座振替<br>
+                       &nbsp;対象の地方銀行であればインターネットからもお申し込みできます。
+                   </p>
+                   <p>
+                    ▶クレジットカード<br>
+                    &nbsp;インターネットを利用してクレジットカードで市税を納付できます。
+                　 </p>
+                　　<p>
+                    ▶LINE Pay・PayPay・モバイルレジ<br>
+                    &nbsp;スマートフォンのアプリの「LINE Pay」・「PayPay」・「モバイルレジ」で市税を納付できます。
+                　　</p>
+               </div>
+               <div id="sonota">
+                <div class="tax-title"><h2>県税・国税・その他</h2></div>
+                <h3>県税</h3>
+                <ul>
+                    <li><P>▶東福岡県税事務所</P></li>
+                    <li><p><span><i class="fas fa-phone"></i></span>641-0201<span>Ⓕ</span>641-0136</p></li>
+                </ul>
+                <ul>
+                    <li><p>▶博多県税事務所</p></li>
+                    <li><p><span><i class="fas fa-phone"></i></span>260-6001<span>Ⓕ</span>260-6011</p></li>
+                </ul>  
+                <ul>
+                    <li><P>▶西福岡税事務所</P></li>
+                    <li><p><span><i class="fas fa-phone"></i></span>735-6141<span>Ⓕ</span>715-4824</p></li>
+                </ul>
+                <h3>国税</h3>
+                <div id="kokuzei">
+                    <div class="kokuzei-tel">
+                        <p>▶福岡税務署</p><p><span><i class="fas fa-phone"></i></span>771-1151</p>
+                    </div>
+                    <div class="kokuzei-tel">
+                        <p>▶西福岡税務署</p><p><span><i class="fas fa-phone"></i></span>843-6211</p>
+                    </div>
+                    <div class="kokuzei-tel">
+                        <p>▶博多税務署</p><p><span><i class="fas fa-phone"></i></span>641-8131</p>
+                    </div>
+                    <div class="kokuzei-tel">
+                        <p>▶福岡税務署</p><p><span><i class="fas fa-phone"></i></span>661-1031</p>
+                    </div>
+                </div>
+                <div class="attention">
+                     <p>※</p>
+                     <p>聴覚に障害がある人は、全署共通のファックス(411-0124)をご利用ください。</p>
+                </div>
+                <div class="car">
+                     <h3>軽自動車(三輪・四輪)の税申告</h3>
+                     <p>▶(一社)全国軽自動車協会連合会</p>
+                     <p>福岡事務所</p>
+                     <p><span><i class="fas fa-phone"></i></span>641-0431<span>Ⓕ</span>641-0115</p>
+                </div>
+                <div class="car">
+                    <h3>二輪の軽自動車(125ccを超え250cc以下のバイク)、二輪の小型自動車(250ccを超えるバイク)の税申告</h3>
+                    <p>▶(一社)全国軽自動車協会連合会</p>
+                    <p>福岡事務所千早分室<br>
+                       東区千早3-10-40&nbsp;陸運会館&nbsp;2階
+                    </p>
+                    <p><span><i class="fas fa-phone"></i></span>641-0431(福岡事務所の代表番号)</p>
+                </div>
+                <div class="attention">
+                    <p>※</p>
+                    <p>軽自動車や二輪の小型自動車の車検等の手続きについては、車種に応じて軽自動車検査協会または運輸支局にお問い合わせください。</p>
+               　</div>
+            　</div>
+         </div><!--tax-subのdiv-->
+    </div>
+    <!--wrapperのdiv-->
+    <!--2行目のscriptはjqueryのcdnでcssとjsを両方貼り付ける。-->
+    <!--3行目のscriptはslickのcdnでcssとjsを両方貼り付ける。cssはheadに貼り付ける。-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $('.autoplay').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+    
+                responsive: [
+                    {
+                        breakpoint: 768, //767px以下のサイズに適用
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            autoplay: true,
+                        }
+                    }]
+            });
+        </script>
+</body>
+
+</html>

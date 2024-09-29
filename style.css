@@ -1,0 +1,605 @@
+@charset "utf-8";
+/*ここからtax.html*/
+.text-indent{
+    text-indent: 1em;
+}
+
+table{
+    vertical-align: middle;
+}
+
+tbody th{
+    align-items: flex-end;
+}
+
+#wrapper{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #fafafa;
+}
+
+#wrapper h1{
+    font-size: 4em;
+}
+
+#wrapper h2{
+    font-size: 1.5em;
+}
+
+#wrapper h3{
+    font-size: 1em;
+}
+
+#wrapper h4{
+    font-size: 0.8em;
+}
+
+#wrapper h5{
+    font-size: 0.5em;
+}
+
+#wrapper .bigicon,#wrapper .bigicon{
+    color: #fafafa;
+    background-color: #8bc34a;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+.tax-title{
+    color: #fafafa;
+    background-color: #8bc34a;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.tax-main{
+    float: left;
+    width: calc(60% - 1em);
+    margin-right: 1em;
+}
+
+.tax-sub{
+    float: right;
+    width: 40%;
+}
+
+#shizei-top{
+    width: 100%;
+    background-color: #8bc34a;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+}
+
+.title{
+    font-weight: normal;
+    margin-top: 0.5em;
+}
+
+.light-car{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.light-car h3{
+    margin-bottom: 0;
+}
+
+.shizei-chart table th ,.shizei-chart table td{
+    border: 1px solid #212121;
+    
+}
+
+.shizei-chart table tbody tr th{
+    margin-bottom: 0;
+}
+
+.shoumei-chart table th ,.shoumei-chart table td{
+    border: 1px solid #212121;
+}
+
+#tax-wrapper h3,span{
+    color: #8bc34a;
+}
+
+.shizei-chart h3,.shoumei-chart h3{
+    color: #212121;
+}
+
+.attention{
+    display: flex;
+}
+
+.kokuzei-tel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.option{
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #212121;
+}
+
+.light-green{
+    background-color: #dcedc8;
+    color: #212121;
+}
+
+thead th{
+    background-color: #388e3c;
+    color: #fafafa;
+}
+
+.chart-kome{
+    font-size: 0.5em;
+    color: #212121;
+}
+
+.zaisei{
+    white-space: nowrap;
+}
+
+.tax-main .center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top{
+    vertical-align: middle;
+}
+
+.ten{
+    white-space: nowrap;
+}
+
+#shurui{
+    width: 45%;
+}
+
+.bottom .green{
+    color: #8bc34a;
+}
+
+.bottom{
+    color: #212121;
+}
+
+#botoom ul li{
+    list-style: none;
+}
+/*ここまでtax.html*/
+/*ここからhoken.html*/
+.text-indent{
+    text-indent: 1em;
+}
+
+#wrapper{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #fafafa;
+}
+
+#wrapper h1{
+    font-size: 4em;
+}
+
+#wrapper h2{
+    font-size: 1.5em;
+}
+
+#wrapper h3{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#wrapper h4{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+#wrapper h5{
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+#wrapper p{
+    line-height: 1.5em;
+}
+
+.title{
+    color: #fafafa;
+    background-color: #8bc34a;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+#hoken-main{
+    float: left;
+    width: calc(60% - 2em);
+    margin-right: 2em;
+}
+
+#hoken-sub{
+    float: right;
+    width: 40%;
+}
+
+.main-top{
+    margin-bottom: 1em;
+}
+
+.nennkin-gaiyou-chart table,.nennkin-gaiyou-chart table th,
+.nennkin-gaiyou-chart table td,.jyukyuu-chart table,.jyukyuu-chart table th,
+.jyukyuu-chart table td{
+    border: #212121 1px solid;
+}
+
+.nennkin-gaiyou-chart thead th,#jyukyuu-chart thead th,.shimin thead th{
+    background-color: #388e3c;
+    color: #fafafa;
+}
+
+.sub-question{
+    color: #8bc34a;
+}
+
+#wrapper .light-green{
+    background-color: #dcedc8;
+    color: #212121;
+    font-weight: bold;
+
+}
+
+.sub-time{
+    display: flex;
+}
+
+.tel-annnai{
+    border-top:#8bc34a 1px solid;
+}
+
+.tel-annnai ul,.sub-time ul{
+    list-style: none;
+}
+
+.annnai-bottom{
+    border-bottom: #8bc34a 1px solid;
+}
+
+.sub-footer{
+    border: #8bc34a 3px solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#hoken-main .center{
+    vertical-align: middle;
+}
+
+.kokuho{
+    clear: both;
+    padding-top: 1em;
+}
+
+.vertical{
+    writing-mode: vertical-rl;
+}
+
+.kokuho-todokede h3{
+    color: #8bc34a;
+}
+
+.kokuho-todokede table,.kokuho-todokede table th,
+.kokuho-todokede table td,.mynumber table,.mynumber table th,
+.mynumber table td,.kyuuhu table,.kyuuhu table th,
+.kyuuhu table td,.shimin table,.shimin table th,
+.shimin table td,.souzoku table,.souzoku table th,
+.souzoku table td{
+    border: #212121 1px solid;
+}
+
+.kokuho-todokede thead th,.mynumber thead th,.shimin thead th,.dark-green{
+    background-color: #388e3c;
+    color: #fafafa;
+}
+
+.kokuho-todokede .light-green{
+    background-color: #dcedc8;
+    color: #212121;
+    font-weight: bold;
+}
+
+.mynumber table{
+    width: 100%;
+}
+
+.kyuuhu h3,.mynumber h3{
+    color: #8bc34a;
+}
+
+.kokuho .center,.chart table th,.chart table tr,.souzoku table th,.souzoku table td{
+    vertical-align: middle;
+    align-items: center;
+}
+
+.kyuuhu-bottom{
+    border: 3px solid #8bc34a;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.announce{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.announce .left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+    width: 30%;
+}
+
+.announce .middle{
+    background-color: #8bc34a;
+    color: #fafafa;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    width: 15%;
+}
+
+.announce-title{
+    color: #8bc34a;
+}
+
+.qrcode{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.qrcode i{
+    margin-right: 1em;
+}
+
+.qrcode-contents{
+    width: 50%;
+}
+
+.kyuuhu table{
+    margin-bottom: 0em;
+}
+
+.align{
+    vertical-align: middle;
+}
+
+.start{
+    text-align: start;
+}
+
+#wrapper .center{
+    vertical-align: middle;
+    text-align: center;
+}
+
+#wrapper .mynumber .black,.kyuuhu-bottom .black{
+    color: #212121;
+}
+
+.sub-main h3,#hoken-main h3{
+    color: #8bc34a;
+}
+
+.nennkin-gaiyou-chart .start,.jyukyuu-chart .start{
+    padding: 1em;
+    text-align: start;
+}
+/*text-alignはstart*/
+/*ここまでhoken.html*/
+/*ここからconsult.thml*/
+#wrapper{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #fafafa;
+}
+
+#wrapper h1{
+    font-size: 4em;
+}
+
+#wrapper h2{
+    font-size: 1.5em;
+}
+
+#wrapper h3{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#wrapper h4{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+#wrapper h5{
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+#wrapper p{
+    line-height: 1.5em;
+}
+
+#wrapper .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#wrapper .bigicon{
+    color: #fafafa;
+    background-color: #8bc34a;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+.shimin table th,.shimin table td{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.chart table{
+    width: 48%;
+}
+.chart table,.chart table th,.chart table td{
+    border: #212121 1px solid;
+}
+
+.souzoku table{
+    width: 100%;
+    
+}
+
+.souzoku table th td{
+    vertical-align: middle;
+    align-items: center;
+}
+
+.text-indent-minus{
+    text-indent: -1em;
+}
+
+.consult-toiawase{
+    display: flex;
+    flex-direction: row;
+}
+
+.toiawase-left{
+    order: 1;
+    width: calc(33% - 1em);
+    margin-right: 1em;
+}
+
+.toiawase-middle{
+    order: 2;
+    width: calc(33% - 1em);
+    margin-right: 1em;
+    padding-top: 1em;
+}
+
+.toiawase-right{
+    order: 3;
+    width: calc(33% - 1em);
+}
+
+.toiawase-box{
+    border: #8bc34a 1px solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.toiawase-time{
+    display: flex;
+    flex-direction: row;
+}
+
+.toiawasesaki ul{
+    list-style: none;
+}
+
+.sonotanosoudann{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.margin{
+    margin-top: 1em;
+}
+
+.consult-toiawase h3{
+    color: #8bc34a;
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.shimin .shimin-start{
+    padding-left: 1em;
+    text-align: start;
+}
+/*text-alignはstartにする*/
+
+.souzoku table th,.souzoku table td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top-down{
+    padding-top: 1em;
+}
+
+.width-70{
+    width: 100%;
+}
+
+.between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
