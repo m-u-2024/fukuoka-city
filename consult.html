@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--今回はreset.cssではなく、reset-special.cssを使う-->
+    <!-- 2番目にfont awesome 3番目にgoogle font 4番目にbootstrap icon-->
+    <!--slick-theme.cssはslickのサイトの「Add slick.css in your <head>」の2行目を貼り付ける-->
+    <link rel="stylesheet" href="reset-special.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <!--最後の2つのslickはslickからダウンロードしてslick-1.8をslickにして書き換えたもの-->
+    <title>レスポンシブ対応20211214consult</title>
+</head>
+<body>
+    <div id="wrapper">
+         <div class="top">
+             <i class="fas fa-user-ninja fa-5x bigicon"></i>
+             <h1>各種相談窓口</h1>
+         </div>
+         <div class="title">
+            <h2>市民相談室</h2>
+       　</div>
+         <div class="shimin">
+              <table>
+                  <thead>
+                      <tr>
+                          <th width="30%">相談名称</th>
+                          <th width="16%">市政相談</th>
+                          <th width="18%">法律相談(弁護士)</th>
+                          <th width="18%">司法書士相談</th>
+                          <th width="18%">就労相談</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="light-green">
+                            <th>相談内容</th>
+                            <th>市政に関する意見、要望、相談など</th>
+                            <th>金銭、離婚、相続など<br>日常生活の法律相談<br>面談のみ</th>
+                            <th>債務管理、消費者問題、不動産登記その他司法書士業務全般</th>
+　　　　　　　　　　　　　　　 <th>就労に関する相談(面談・オンライン相談)</th>
+                      </tr>
+                      <tr>
+                          <th class="shimin-start">市役所<br><span><i class="fas fa-phone"></i></span>711-4019<span>(F)</span>733-5580</th>
+                          <td rowspan="10">月～金<br><small>※注1</small></td>
+                          <td>月～水<br><small>※注2</small></td>
+                          <td>-</td>
+                          <td>-</td>
+                      </tr>
+                      <tr>
+                          <th class="shimin-start">東区役所<br><span><i class="fas fa-phone"></i></span>645-1011<span>(F)</span>651-5097</th>
+                          <td>木</td>
+                          <td>第1金</td>
+                          <td>水・金</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">博多区役所<br><span><i class="fas fa-phone"></i></span>419-1013<span>(F)</span>452-6735</th>
+                        <td>水</td>
+                        <td>第2木</td>
+                        <td>⇨P.66</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">中央区役所<br><span><i class="fas fa-phone"></i></span>718-1014<span>(F)</span>714-2141</th>
+                        <td>金</td>
+                        <td>第1木</td>
+                        <td>火・水</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">南区役所<br><span><i class="fas fa-phone"></i></span>559-1013<span>(F)</span>452-6735</th>
+                        <td>水</td>
+                        <td>第2木</td>
+                        <td>⇨P.66</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">城南区役所<br><span><i class="fas fa-phone"></i></span>883-4010<span>(F)</span>844-1204</th>
+                        <td>金</td>
+                        <td>第4水</td>
+                        <td>月・火</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">早良区役所<br><span><i class="fas fa-phone"></i></span>883-4308<span>(F)</span>846-2864</th>
+                        <td>月</td>
+                        <td>第3火</td>
+                        <td>木・金</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">西区役所<br><span><i class="fas fa-phone"></i></span>895-7008<span>(F)</span>885-0467</th>
+                        <td>木</td>
+                        <td>第4月</td>
+                        <td>月・火・水</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">入部出張所庶務係<br><span><i class="fas fa-phone"></i></span>804-2011<span>(F)</span>803-0924</th>
+                        <td>木</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <th class="shimin-start">西部出張所庶務係<br><span><i class="fas fa-phone"></i></span>806-9430<span>(F)</span>806-6811</th>
+                        <td>木</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="light-green">
+                          <th>相談時間</th>
+                          <td>9:00～17:00</td>
+                          <td>13:00～16:00<br>相談希望日の1週間前にあたる日<br>(1週間前にあたる日が休日の場合は翌登庁日)から電話又は来所で予約受付
+                            　受付時間9:00～17:00<br>事前予約制/1人年1回
+                        　</td>
+                        　<td>13:00～16:00<br>事前予約制</td>
+                          <td>9:00～17:00<br>(12:00～13:00を除く)<br>予約制<br> <span><i class="fas fa-phone"></i></span>806-9430</td>
+                      </tr>
+                  </tbody>
+              </table>
+         </div><!--shiminのdiv-->
+         <div class="chart"><!--floatを使わずにjustify-contentのbetween-->
+               <table>
+                    <tr>
+                        <th class="vertical dark-green" width="auto">交通事故</th>
+                        <th class="light-green" width="27%">交通事故による損害賠償や法律手続きなど</th>
+                        <th width="46%"><p>市役所</p>
+                            <p><span><i class="fas fa-phone"></i></span>711-4097<span>(F)</span>733-5580</p>
+                            <p>月～金曜</p>
+                            <p>電話・面談(電話は予約制)</p>
+                        </th>
+                        <th class="light-green" width="27%">9:30～16:00<br>(12:00～13:00を除く)</th>
+                    </tr>
+                </table>
+               <table>
+                    <tr>
+                        <th class="vertical dark-green" width="auto">公証</th>
+                        <th class="light-green" width="27%">相続、遺言、離婚などの公正証書に関する相談</th>
+                        <th width="46%"><p>市役所</p>
+                            <p><span><i class="fas fa-phone"></i></span>711-4019<span>(F)</span>733-5580</p>
+                            <p>第2・4金曜</p>
+                        </th>
+                        <th class="light-green" width="27%">13:00～16:00<br>事前予約制</th>
+                    </tr>
+                </table>
+         </div><!--chartのdiv-->
+         <div class="chart-option">
+              <p>相談日は祝日を除きます。お盆、年末年始などは休むことがあります。</p>
+              <p>※注1 映像通訳(テレビ電話通訳)を活用した外国人相談もできます。(英・中・韓・ベトナム・ネパール)</p>
+              <p>※注2 市役所では、天神弁護士センターまたは六本松法律相談センターで法律相談が無料で受けられるチケットを毎月第1金曜から月40枚限定で配布します。</p>
+         </div>
+         <div class="title">
+             <h2>終活相談</h2>
+         </div>
+         <div class="souzoku">
+            <p class="text-indent">相続・葬儀・家財処分・権利擁護などの分野についてワンストップによる相談や情報提供を行います。相談員による面談を希望する場合は要予約。</p>
+            <table>
+                 <thead>
+                     <tr>
+                        <th>相談場所</th>
+                        <th>種類</th>
+                        <th>相談員</th>
+                        <th>日時</th>
+                     </tr>    
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td rowspan="2" class="start top-down">
+                             市社会福祉協議会　就活サポートセンター<br>
+                            福岡市市民福祉プラザ(ふくふくプラザ)4階<br>
+                            <span><i class="fas fa-phone"></i></span>720-5356<span>(F)</span>751-1509<br>
+                            予約受付時間
+                            月～金9:00～17:00<br>
+                            <span>(休)</span>祝日、年間年始(12/29～1/3)<br>
+                            <span>(料)</span>無料
+                        </td>
+                         <td>総合相談</td>
+                         <td>終活アドバイザー</td>
+                         <td>第1・3・5　水<br>13:00～16:00</td>
+                     </tr>
+                     <tr>
+                         <td>専門相談</td>
+                         <td>弁護士</td>
+                         <td>第2・4　水<br>13:00～16:00</td>
+                     </tr>
+                 </tbody>
+            </table>
+         </div><!--souzokuのdiv-->
+         <div class="consult-toiawase"><!--clearfxを使わない-->
+               <div class="toiawase-left">
+                　　 <div class="title">
+                        <h2>消費生活相談</h2>
+               　   </div>
+               　　 <div class="toiawase-contents">
+                         <p>商品やサービスの契約、販売方法など、消費者トラブルに関する相談について専門の相談員が応じます。各種講座や啓発
+                             パンフレット等については事務室までお問い合わせください。
+                         </p>
+                         <h3><span><i class="fas fa-square-full"></i></span>消費生活相談</h3>
+                         <div class="toiawasesaki">
+                             　
+                               <P><span><i class="fas fa-phone"></i></span>781-0999</P>
+                               <div class="toiawase-time">
+                                   <span><i class="far fa-clock"></i></span>
+                                   <div>
+                                       <p>平日9:00～17:00</p>
+                                       <p>(来所・電話)※来所は要予約</p>
+                                       <p>第2・4土曜10:00～16:00</p>
+                                       <p>(電話のみ)※祝日を除く</p>
+                                       <p>上記以外の土日祝日10:00～16:00は消費者ホットライン(<span><i class="fas fa-phone"></i></span>118)をご利用ください。
+                                       </p>
+                                </div>
+                                </div>
+                                <P>インターネットでの相談</P>
+                                <p><span>(H)</span>https://www.city.fukuoka.lg.jp/shouhiseikatsu-soudan</p>
+                                <div class="toiawase-box">
+                                      <p>消費生活センター</p>
+                                      <p>〒810-0073中央区舞鶴2-5-1<br>あいれふ7階</p>
+                                      <p><span><i class="fas fa-phone"></i></span>712-2929(事務室)<span>(F)</span>712-2765</p>
+                                      <p><span>(休)</span>土・日曜、祝休日、12/29～1/3/<p>
+                                </div>
+                         </div>
+                    </div><!--toiawase-contentsのdiv-->
+                    <div class="title">
+                        <h2>人権に関する相談</h2>
+               　   </div>
+                    <div class="toiawase-contents">
+                        <p>商品やサービスの契約、販売方法など、消費者トラブルに関する相談について専門の相談員が応じます。各種講座や啓発
+                            パンフレット等については事務室までお問い合わせください。
+                        </p>
+                        <h3><span><i class="fas fa-square-full"></i></span>人権啓発相談室(人権に関する相談)</h3>
+                        <div class="toiawasesaki">
+                            　
+                              <P><span><i class="fas fa-phone"></i></span>717-1247<span>(F)</span>724-5162</P>
+                              <div class="toiawase-time">
+                                  <span><i class="far fa-clock"></i></span>
+                                  <div>
+                                      <p>月～金曜10:00～17:00</p>
+                                      <p>(12:00～13:00、休館日を除く)</p>
+                               　　</div>
+                               </div>
+                               <div class="toiawase-box">
+                                     <p>ココロンセンター(人権啓発センター)</p>
+                                     <p>〒810-0073中央区舞鶴2-5-1<br>あいれふ8階</p>
+                                     <p><span><i class="fas fa-phone"></i></span>712-2929(事務室)<span>(F)</span>712-2765</p>
+                                     <p><span><i class="far fa-clock"></i></span>10:00～21:00(土曜、12/28は17:30まで)</p>
+                                     <p><span>(休)</span>年末年始(12/29～1/3)、日曜、祝休日</p>
+                               </div>
+                        </div>
+                    </div><!--toiawase-contentsのdiv-->
+                    <div class="toiawase-sonota">
+                        <h3><span><i class="fas fa-square-full"></i></span>人権啓発相談室(人権に関する相談)</h3>
+                        <P><span><i class="fas fa-phone"></i></span>070-7655-4698</P>
+                        <div class="toiawase-time">
+                            <span><i class="far fa-clock"></i></span>
+                            <div>
+                                <p>第2木曜・第4土曜</p>
+                                <p>12:00～16：00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toiawase-sonota">
+                        <h3><span><i class="fas fa-square-full"></i></span>その他の人権相談</h3>
+                        <p>福岡法制局 みんなの人権110番</p>
+                        <p><span><i class="fas fa-phone"></i></span>0570-003-110</p>
+                        <p><span><i class="far fa-clock"></i></span>平日8:30～17:15</p>
+                        <p>法制局インターネット人権相談総合窓口</p>
+                        <p><span>(H)</span>https://www.jnken.go.jp/</p>
+                    </div>
+               </div><!--toiawase-leftのdiv-->
+               <div class="toiawase-middle">
+                    <div class="title">
+                        <h2>夫婦や家族に関する相談</h2>
+           　       </div>
+           　　　　　<h3>配偶者・パートナーに対する<br>暴力・生き方相談</h3>
+           　　　　　<div class="toiawase-contents">
+　　　　　　　　　　　　　 <p class="text-indent">
+                            女性相談員が、パートナーからの暴力、夫婦、家族など男女が抱える問題について相談に応じます。
+            　　　　　　　</p>
+            　　　　　　　<h3><span><i class="fas fa-square-full"></i></span>総合相談</h3>
+            　　　　　　　<div class="toiawasesaki">
+                  　　　　　　<P><span><i class="fas fa-phone"></i></span>526-3788</P>
+                              <div class="toiawase-time">
+                                   <span><i class="far fa-clock"></i></span>
+                                   <div>
+                                        <p>毎日10:00～16:30</p>
+                          　　　　　　　 <p>毎月第2・4月曜10:00～20：00(祝日を除く)</p>
+                                   </div>
+                             </div>
+            　　　　　　　</div>
+                        <h3><span><i class="fas fa-square-full"></i></span>アカミスDV相談ダイヤル</h3>
+            　　　　　　　<div class="toiawasesaki">
+                  　　　　　　<P><span><i class="fas fa-phone"></i></span>526-6070</P>
+                              <div class="toiawase-time">
+                                   <span><i class="far fa-clock"></i></span>
+                                   <div>
+                                        <p>水・木曜10:00～16:00</p>
+                                   </div>
+                             </div>
+            　　　　　　　</div>
+                        <h3><span><i class="fas fa-square-full"></i></span>法律相談</h3>
+                        <p class="text-indent">女性弁護士による面接相談</p>
+            　　　　　　　<div class="toiawasesaki">
+                  　　　　　　<P><span><i class="fas fa-phone"></i></span>526-3788(予約電話)</P>
+                              <div class="toiawase-time">
+                                   <span><i class="far fa-clock"></i></span>
+                                   <div>
+                                        <p>第1～4水曜13:00～16:00(祝日を除く)</p>
+                                        <p>第4月曜18:00～20:00(就労している人)</p>
+                                   </div>
+                             </div>
+            　　　　　　　</div>
+                         <h3>男性のための相談ホットライン</h3>
+                         <p class="tet-indent">男性相談員が男性の悩み相談に応じます。</p>
+                         <P><span><i class="fas fa-phone"></i></span>526-1718</P>
+                         <p><span><i class="far fa-clock"></i></span>毎月1～3月曜19:00～21:00(祝日を除く)</p>
+                         <div class="toiawase-box">
+                            <p>男女共同参画推進センター・アカミス</p>
+                            <p>〒810-0083南区高宮3-3-1</p>
+                            <p><span><i class="fas fa-phone"></i></span>526-3755<span>(F)</span>526-3766</p>
+                            <div class="toiawase-time">
+                                <span>(休)</span>
+                                <p>第2・最終火曜(祝日の場合は翌平日)、12/28～1/3</p>
+                            </div>
+                            <p><span>(料)</span>無料(施設利用はお問い合わせください)</p>
+                      　 </div>
+                      　　<h3>DV相談専用電話</h3>
+                      　　<p>配偶者暴力相談支援センター</p>
+                      　　<p><span><i class="fas fa-phone"></i></span><span>(F)</span>711-7030</p>
+                          <div class="toiawase-time">
+                               <span><i class="far fa-clock"></i></span>
+                               <div>
+                                   <p>月・水・木・金曜 10:00～17:00</p>
+                                   <p>火曜 10:00～20:00(祝日を除く)</p>
+                               </div>
+                          </div>
+                    </div><!--toiawase-contentsのdiv-->
+                    <div class="title">
+                        <h2>子どもや家庭に関する相談</h2>
+           　       </div>
+           　　　　　<h3>家庭児童相談室</h3>
+           　　　　　<p class="text-indent">子どもの養育など家庭内のさまざまな問題についての相談に応じます。</p>
+                    <p><span><i class="far fa-clock"></i></span>月～金曜9:00～17:00</p>
+                    <div class="toiawase-time toiawase-box">
+                         <span>(問)</span>
+                         <div>
+                             <div class="width-70">
+                                <div class="between"><p>東区</p><p><span><i class="far fa-clock"></i></span>645-1072</p></div>
+                                <div class="between"><p>博多区</p><p><span><i class="far fa-clock"></i></span>419-1084</p></div>
+                                <div class="between"><p>中央区<p></p><span><i class="far fa-clock"></i></span>718-1104</p></div>
+                                <div class="between"><p>南区<p><p><span><i class="far fa-clock"></i></span>559-5124</p></div>
+                                <div class="between"><p>城南区</p><p><span><i class="far fa-clock"></i></span>833-4104</p></div>
+                                <div class="between"><p>早良区</p><p><span><i class="far fa-clock"></i></span>833-4357</p></div>
+                                <div class="between"><p>西区</p><p><span><i class="far fa-clock"></i></span>895-7069</p></div>
+                             </div>
+                         </div>
+                    </div>
+                    <h3>相談窓口ガイド</h3>
+                    <p class="text-indent">市民から問い合わせの多い相談窓口を市ホームページに掲載しています。お困りの際にご利用ください。</p>
+               </div><!--toiawase-middleのdiv-->
+               <div class="toiawase-right">
+                　　<div class="title">
+                    　　　<h2>警察・行政・法律相談</h2>
+           　   　　</div>
+           　　　　 <h3>福岡県警察各種相談 県警[相談電話</h3>
+           　      <p>プッシュ式電話#9110</p>
+                   <p>ダイヤル式電話<span><i class="fas fa-phone"></i></span>641-9110</p>
+                   <p><span><i class="far fa-clock"></i></span>月～金曜9:00～17:15(祝日・年末年始を除く)</p>
+                   <h3>くらし・行政なんでも相談</h3>
+                   <p>福岡総合行政相談所<span><i class="fas fa-phone"></i></span>781-7830</p>
+                   <h3>暴力団などに関する相談</h3>
+                   <p>(公益財団法人)福岡県暴力地方運動</p>
+                   <p>推進センター<span><i class="fas fa-phone"></i></span>651-8938</p>
+                   <p>福岡市暴力追放相談センター</p>
+                   <p><span><i class="fas fa-phone"></i></span>711-4076(暴力団やその周辺による不当請求等)</p>
+                   <h3>法的トラブルに関する問い合わせ</h3>
+                   <p>法テラス福岡<span><i class="fas fa-phone"></i></span>050-3383-5501</p>
+                   <p>法テラスサポートダイヤル<span><i class="fas fa-phone"></i></span>0570-078374</p>
+                   <p>(電話による法律相談は行っておりません)</p>
+                   <h3>犯罪被害者のための相談</h3>
+                   <p>福岡犯罪被害者総合サポートセンター</p>
+                   <p><span><i class="fas fa-phone"></i></span>409-1356(公益社団法人福岡犯罪被害者支援センター)</p>
+                   <P><span><i class="far fa-clock"></i></span>月～金曜9:00～16:00(祝日・年末年始を除く)</P>
+                   <p>性暴力被害者支援センター・ふくおか</p>
+                   <p><span><i class="fas fa-phone"></i></span>409-8100(公益社団法人福岡犯罪被害者支援センター)</p>
+                   <P><span><i class="far fa-clock"></i></span>24時間・365日(年中無休)</P>
+                   <div class="title">
+                    　　　<h2>その他の相談</h2>
+           　   　　</div>
+           　　　　 <div class="sonotanosoudann">
+                        <h3><span><i class="fas fa-square-full"></i></span>住宅に関する相談</h3>
+                        <p>⇨p.38</p>
+                   </div>
+                   <div class="sonotanosoudann">
+                        <h3><span><i class="fas fa-square-full"></i></span>子育てに関する相談</h3>
+                        <p>⇨p.49</p>
+                   </div>
+                   <h3><span><i class="fas fa-square-full"></i></span>教育・いじめ・不登校に関する相談</h3>
+                   <div class="end"><p>⇨P.51</p></div>
+                   <div class="sonotanosoudann">
+                        <h3><span><i class="fas fa-square-full"></i></span>医療に関する相談</h3>
+                        <p>⇨p.53</p>
+                   </div>
+                   <div class="sonotanosoudann">
+                       <h3><span><i class="fas fa-square-full"></i></span>障がいに関する相談</h3>
+                       <p>⇨P.61、P.62</p>
+                   </div>
+                   <div class="sonotanosoudann">
+                    　　<h3><span><i class="fas fa-square-full"></i></span>こころの健康専門相談</h3>
+                        <p>⇨P.62</p>
+                　　</div>
+                　　<div class="sonotanosoudann">
+                    　　<h3><span><i class="fas fa-square-full"></i></span>仕事に関する相談</h3>
+                    　　<p>⇨P.65～67</p>
+                　　</div>
+                    <div class="sonotanosoudann">
+                        <h3><span><i class="fas fa-square-full"></i></span>経営相談</h3>
+                        <p>⇨P.67</p>
+                    </div>
+                    <h3><span><i class="fas fa-square-full"></i></span>在住外国人向け各種相談</h3>
+                    <p>福岡市外国人総合相談支援センター</p>
+                    <p>福岡市国際会館において、一般相談のほか、法律相談、入国・在留・国籍に関する相談、心理カウンセリングに応じます。</p>
+                    <p><span><i class="fas fa-phone"></i></span>262-1799 <span>(F)</span>262-2700</p>
+                    <p>(公益財団法人 福岡よかトピア国際交流財団)</p>
+                    <h3 class="margin"><span><i class="fas fa-square-full"></i></span>新型コロナウィルス感染症相談ダイヤル</h3>
+                    <p><span><i class="fas fa-phone"></i></span>711-4126(24時間) <span>(F)</span>406-5075</p>
+                    <h3><span><i class="fas fa-square-full"></i></span>新型コロナウィルス接種コールセンター</h3>
+                    <p><span><i class="fas fa-phone"></i></span>260-8405 <span>(F)</span>260-8406</p>
+                    <p><span><i class="far fa-clock"></i></span>毎日8:30～17:30</p>
+                    <p>※接種状況によって終了する場合があります。</p>
+               </div><!--tiawase-rightのdiv-->
+         </div><!--consult-otoiawaseのdiv-->
+    </div>
+    <!--wrapperのdiv-->
+</body>
+
+</html>

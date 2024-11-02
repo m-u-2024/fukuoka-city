@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--今回はreset.cssではなく、reset-special.cssを使う-->
+    <!-- 2番目にfont awesome 3番目にgoogle font 4番目にbootstrap icon-->
+    <link rel="stylesheet" href="reset-special.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <!--最後の2つのslickはslickからダウンロードしてslick-1.8をslickにして書き換えたもの-->
+    <title>レスポンシブ対応20211214hoken</title>
+</head>
+<body>
+    <div id="wrapper">
+          <div class="top">
+            <i class="fas fa-book-medical fa-5x bigicon"></i>
+            <h1>国民年金・国民健康保険</h1>
+          </div>
+          <div class="title">
+               <h2>国民年金</h2>
+          </div>
+          <div id="hoken-main">
+              　<div class="main-top">
+                    <p class="text-indent">年金制度は、大きく国民年金、厚生年金の2つがあります。</p>
+                    <p class="text-indent">
+                       国民年金は年金制度全体の基礎的なものとして、国内に居住する20歳以上60歳未満の全員が加入し、老齢基礎年金と呼ばれる基本的な年金を支給します。
+             　     </p>
+               </div>
+               <div class="nennkin-gaiyou-chart">
+                    <table>
+                         <thead>
+                                <tr>
+                                    <th width="25%">種別</th>
+                                    <th width="auto">対象者</th>
+                                    <th width="30%">加入手続き先</th>
+                                </tr>
+                         </thead>
+                         <tbody>
+　　　　　　　　　　　　　　　　　 <tr>
+                                    <th class="light-green center start">第1号被保険者</th>
+                                    <td>20際以上60歳未満で自営業、農林漁業、アルバイト、学生、無職の人など</td>
+                                    <td>各区保険年金係、各出張所</td>
+                                </tr>
+                                <tr>
+                                    <th class="light-green center start">第2号被保険者</th>
+                                    <td>会社員や公務員などで厚生年金に加入している人</td>
+                                    <td class="align">転勤先</td>
+                                </tr>
+                                <tr>
+                                    <th class="light-green center start">第3号被保険者</th>
+                                    <td>第2号被保険者に扶養されている配偶者で、20歳以上60歳未満の人</td>
+                                    <td class="align">配偶者の転勤先</td>
+                                </tr>
+                                <tr>
+                                    <th class="light-green center start">任意加入被保険者</th>
+                                    <td>
+                                        <ul>
+                                            <li>老齢基礎年金を受けるために必要な年数を満たしていない人</li>
+                                            <li>受け取る年金額を増やしたい人</li>
+                                            <li>海外に住んでいる日本人</li>
+                                        </ul>
+                                    </td>
+                                    <td>各区保険年金課国民年金係、各出張所のほか<br>年金事務所の場合があります。</td>
+                                </tr>
+                         </tbody>
+                    </table>
+                    <p>※加入期間が足りず老齢基礎年金を受けられない人は、70歳になるまでの必要な期間、任意加入できます。</p>
+               </div><!--nennkin-gaiyou-chartのdiv-->
+               <div class="hoken-attention">
+                    <h3>届出が必要なとき</h3>
+                    <p>▶第1号被検者の住所・氏名が変わったとき(日本年金機構にマイナンバーが登録されている人は除く)</p>
+                    <p>▶厚生年金を辞めたとき(退職日がわかる書類が必要)</p>
+                    <p>▶厚生年金に加入する配偶者の扶養から外れたとき(扶養から外れた日がわかる書類が必要)</p>
+                    <p>▶任意加入するとｋ、やめるとき</p>
+               </div>
+               <div class="hoken-necessary">
+                    <h3><i class="fas fa-square"></i>届出に必要なもの</h3>
+                    <p>▶年金手帳</p>
+                    <p>▶身分確認書類(マイナンバーカード、運転免許書など)</p>
+                    <P>※代理人が届出する場合は、委任状と代理人の身元確認書類</P>
+               </div>
+               <div class="hoken-attention">
+                    <h3>年金を受け取るとき</h3>
+                    <P class="text-indent">
+                        年金を受けるには手続きが必要です。内容により手続き先が異なりますので、手続きの際はよく
+                        ご確認ください。また、年金を受け取るのに、一定の要件がありますので、詳しくは手続き先へお問い合わせください。
+                    </P>
+               </div>
+               <div class="jyukyuu-chart">
+                    <table>
+                        <thead>
+                             <tr>
+                                 <th width="17%">手続きの種類</th>
+                                 <th width="23%">こんなとき</th>
+                                 <th width="28%">国民年金の加入期間</th>
+                                 <th width="auto">手続き先</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                 <th rowspan="2" class="light-green center start">老齢基礎年金の受給</th>
+                                 <td rowspan="2" class="center">65際になったとき</td>
+                                 <td>第1号被保険者期間のみ</td>
+                                 <td>各区保険年金課国民年金係、各出張所</td>
+                             </tr>
+                             <tr>
+                                 <td>第2号、第3号被保険者期間もある場合</td>
+                                 <td class="align">年金事務所</td>
+                             </tr>
+                             <tr>
+                                 <th rowspan="3"class="light-green center start" >障害基礎年金の受給</th>
+                                 <td rowspan="3" class="center">障がいの状態になったとき</td>
+                                 <td>障がいの初診日に第1号被保険者の場合</td>
+                                 <td>各区保険年金課国民年金係、各出張所</td>
+                             </tr>
+                             <tr>
+                                 <td>20歳になる前に障がいの状態になった場合</td>
+                                 <td>各区保険年金課国民年金係、各出張所</td>
+                             </tr>
+                             <tr>
+                                 <td>障がいの初診日に第2号、第3号被保険者の場合</td>
+                                 <td class="align">年金事務所</td>
+                             </tr>
+                             <tr>
+                                 <th rowspan="2" class="light-green center start">遺族基礎年金の受給</th>
+                                 <td rowspan="2" class="center">死亡したとき</td>
+                                 <td>死亡日に第1号被保険者の場合</td>
+                                 <td>各区保険年金課国民年金係、各出張所</td>
+                             </tr>
+                             <tr>
+                                 <td>死亡日に第1号被保険者以外の場合</td>
+                                 <td class="align">年金事務所</td>
+                             </tr>
+                        </tbody>
+                    </table>
+               </div><!--jyukyuu-chartのdiv-->
+          </div><!--hoken-mainのdiv-->
+          <div id="hoken-sub">
+                <div class="sub-main">
+                     <h3>ねんきんダイヤル</h3>
+                     <p class="text-indent">年金請求などの相談</p>
+                     <p><span><i class="fas fa-phone"></i></span>0570-05-1165</p>
+                     <p>050から始まる電話でかける場合は</p>
+                     <p><span><i class="fas fa-phone"></i></span>03-6700-1165</p>
+                     <div class="sub-time">
+                        <span><i class="far fa-clock"></i></span>
+                        <div>
+                            <p>月曜(祝日の場合は火曜)</p>
+                            <p>月曜(祝日の場合は通う)</p>
+                            <p>8:30～19:00</p>
+                            <p>火～金曜8:30～17:15、</p>
+                            <p>毎月第2土曜9:30～16:00</p>
+                            <p>(祝日、12/29～1/3を除く)</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="sub-main">
+                    <h3>年金事務所</h3>
+                    <p class="text-indent">()は担当する区。ご相談の際は年金手帳、身分確認書類(マイナンバーカード、運転免許書など)をお持ちください。</p>
+                </div>
+                <div class="hoken-tel">
+                     <div class="tel-annnai">
+                              <p class="bold">東福岡年金事務所(東区)</p>
+                              <p>東区馬出3-12-32</p>
+                              <p><span><i class="fas fa-phone"></i></span>651-7967<span>Ⓕ</span>641-4049</p>
+                     </div>
+                     <div class="tel-annnai">
+                            <p class="bold">博多年金事務所(博多区)</p>
+                            <p>博多区博多駅東3-15-23</p>
+                            <p><span><i class="fas fa-phone"></i></span>474-0012<span>Ⓕ</span>474-7249</p>
+                     </div>
+                     <div class="tel-annnai">
+                            <p class="bold">中福岡年金事務所(中央区)</p>
+                            <p>中央区大手門2-8-25</p>
+                            <p><span><i class="fas fa-phone"></i></span>751-1232<span>Ⓕ</span>715-2449</p>
+                     </div>
+                     <div class="tel-annnai">
+                            <p class="bold">南福岡年金事務所(南区)</p>
+                            <p>南区塩原3-1-27</p>
+                            <p><span><i class="fas fa-phone"></i></span>552-6112<span>Ⓕ</span>541-7649</p>
+                     </div>
+                     <div class="tel-annnai annnai-bottom" >
+                            <p class="bold">西福岡年金事務所(城南・早良・西区)</p>
+                            <p>西区内浜1-3-7</p>
+                            <p><span><i class="fas fa-phone"></i></span>883-9962<span>Ⓕ</span>884-0149</p>
+                     </div>
+                     <div class="sub-footer">
+                         <p class="bold"><span><i class="far fa-question-circle sub-question"></i></span>各区保険年金課国民年金係、入部出張所保険・福祉係、西部出張所</p>
+                         <P>給付係⇨p.22～25</P>
+                     </div>
+                </div><!--hoken-telのdiv-->
+          </div><!--hoken-subのdiv-->
+          <div class="kokuho">
+             <div class="title">
+                <h2>国民健康保険(国保)</h2>
+             </div>
+             <div class="kokuho-top">
+                 <p class="text-indent">市内に居住している人で、職場の健康保険や後期高齢者医療制度に加入している人、生活保護を受けている人などを除き、
+                     すべての人が国民健康保険に加入しなければなりません。在留期間が3ヶ月を超え、住民基本台帳法の適用を受ける外国籍の人も国民健康保険
+                     への加入が必要です。外国籍の人が加入するときは、「在留カード」、「特別永住者証明書」、「パスポート」のいずれかが必要です。在留資格が
+                     「特定活動」の人は、指定書の確認が必要になります。なお、活動内容が医療目的の人や、そのお世話をする人、観光目的の人は加入できません。
+                 </p>
+             </div>
+             <div class="kokuho-todokede">
+                  <h3>届出が必要なとき</h3>
+                  <p class="text-indent">14日以内に居住地の区保険年金係、出張所へ届出をしてください。</p>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th colspan="2">こんなとき</th>
+                              <th colspan="2">届出に必要なもの※1</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th rowspan="4" class="vertical light-green">国保に加入するとき</th>
+                              <td class="light-green" width="45%">他の市町村から転入したとき</td>
+                              <td width="45%">(市民課に転入の届け出をする)</td>
+                              <td rowspan="4" class="center" width="10%">キャッシュカード※2</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">職場の健康保険などを脱退したときや、被扶養者でなくなったとき</td>
+                              <td>健康保険等資格喪失証明書※3(職場の健康保険を脱退した証明書)</td>
+                          </tr>
+                          <tr>
+                            　<td class="light-green">子どもが生まれたとき</td>
+                            　<td>(市民課に転入届け出をする)</td>
+                        　</tr>
+                        　<tr>
+                            　<td class="light-green">生活保護を受けなくなったとき</td>
+                            　<td>保護廃止決定通知書</td>
+                        　</tr>
+                          <tr>
+                              <th rowspan="5" class="vertical light-green">国保を脱退するとき</th>
+                              <td class="light-green">他の市町村に転出するときや、国外におおむね1年以上居住する見込みがあるとき</td>
+                              <td>(市民課に転出の届け出をする)</td>
+                              <td rowspan="10"class="center">保険証</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">職場の健康保険などに加入したときや、被扶養者になったとき</td>
+                              <td>職場の健康保険証または資格取得証明書(脱退する人全員の保険証または証明書が必要)</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">死亡したとき</td>
+                              <td>(市民課に死亡の届け出をする)</td>
+                          </tr>
+                          <tr>
+                            <td class="light-green">生活保護を受けるようになったとき</td>
+                            <td>保護決定通知書(開始)</td>
+                          </tr>
+                          <tr>
+                            <td class="light-green">一定の障がいがある人(65歳以上)で、後期高齢者医療制度に加入したとき</td>
+                            <td>障がいの内容がわかるもの(身体障害者手帳、精神障害者保健福祉手帳、療育手帳など)</td>
+                          </tr>
+                          <tr>
+                              <th rowspan="7" class="vertical light-green">その他</th>
+                              <td class="light-green">
+                                外国籍の人で在留資格が「特定活動」のうち、活動内容が「医療目的の人や、そのお世話をする人」、または
+                                「観光、保養その他これらに類似する活動等をされている人やその同行する配偶者の人」に変更になったとき
+                              </td>
+                              <td class="align">パスポート<br>(法務大臣が交付した指定書を含む)</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">市内で転居したとき</td>
+                              <td>(市民課に転居の届け出をする)</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">世帯主や氏名が変わったとき、世帯を分けたときや一緒にしたとき</td>
+                              <td>世帯を一緒にするときは両世帯の保険証</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">修学のため、市外に住所を定めるとき</td>
+                              <td>入学証明書または在学証明書</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">長期の入院や施設入所により、住所を他の市町村へ移すとき</td>
+                              <td>入院証明書または入所証明書</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">40歳から64歳までの人で介護保険適用除外施設に入所したとき、または入所中に40歳になったとき(退所時も届出が必要)</td>
+                              <td colspan="2" class="align">入所証明書</td>
+                          </tr>
+                          <tr>
+                              <td class="light-green">保険証をなくしたり汚したりしたとき</td>
+                              <td colspan="2">本人確認ができるもの(公的機関が発行した顔写真付きの証明書等)、使えなくなった保険証</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <P>※1 代理人が手続きする場合は、世帯主からの委任状及び代理人の身元確認書類が必要です。</P>
+                  <p>※2 保険料の支払いは口座振替が原則です。各区役所(出張所)保険年金担当窓口では、キャッシュカードで簡単に口座振替の手続きができます(一部金融機関を除く)。</p>
+                  <P>※3 退職した職場(事業所や健康保険組合など)で発行してもらってください(用紙は、各区役所・出張所保険年金担当窓口にもあります。また、市ホームページからダウンロードできます)。</P>
+             </div><!--kokuho-todokedeのdiv-->
+             <div class="mynumber">
+                  <h3>〇国保の手続きにはマイナンバーの記載が必要です</h3>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>区分</th>
+                              <th>必要書類※1</th>
+                              <th>必要書類数</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th class="black">対象者全員の番号確認</th>
+                              <td>マイナンバーカード、通知カード※2、個人番号が記載された住民票など</td>
+                              <td class="center">1点</td>
+                          </tr>
+                          <tr>
+                              <th rowspan="2" class="center">来所者の身元確認書類</th>
+                              <td>マイナンバーカード、運転免許書、パスポートなど公的機関が発行した顔写真付きの証明書</td>
+                              <td class="center">1点</td>
+                          </tr>
+                          <tr>
+                              <td>保険証、保険料決定(納入)通知書、年金手帳、年金証書、住民票など</td>
+                              <td class="center">2点</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <p>※1 代理人が手続きをする場合は、委任状および手続きに来庁する人の身元確認書類および対象者全員の個人番号確認書類が必要です。</p>
+                  <p>※2 記載事項(住所、氏名等)が住民票と一致している場合は、利用できます。</p>
+             </div><!--mynumberのdiv-->
+             <div class="kyuuhu">
+                  <h3>申請により受けいれられる給付</h3>
+                  <p>&nbsp;&nbsp;保険証、預金通帳、個人番号確認書類及び身元確認書類、その他給付種類によって申請に必要なものがあります。詳しくはお問い合わせください。</p>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th width="15%"><P>種類</P></th>
+                              <th><p>支給内容</p></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th class="light-green align start">療養費</th>
+                              <td>
+                                  急病などにより保険証を持たずに診療を受けたとき　はり・きゅう・あんま・マッサージを医師の同意に基づき、治療として受けたとき
+                                  (健康増進・疾病予防を除く)　コルセットなどの補装具代　海外渡航中に診療を受けたとき
+                              　　
+                            　</td>
+                          </tr>
+                          <tr>
+                              <th class="light-green start">高額療養費</th>
+                              <td>自己負担限度額を超える高額な医療費を支払ったとき(入院時の食事代などを除く)</td>
+                          </tr>
+                          <tr>
+                              <th class="light-green start">出産育児一時金</th>
+                              <td>国保加入者が出産したとき(妊娠12週(84日)以降は、出産、死産、流産等の別を問いません)</td>
+                          </tr>
+                          <tr>
+                              <th class="light-green start">葬祭費</th>
+                              <td>国保加入者が亡くなったとき</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <div class="kyuuhu-bottom">
+                       <P><span><i class="far fa-star"></i></span><span class="bold black">各区保険年金課給付係、入部主張所保険・福祉係、西部主張所給付係</span>⇨p.22～25</P>
+                  </div>
+             </div><!--kyuuhuのdiv-->
+             <div class="announce">
+                  <div class="left">
+                       <P><span class="announce-title">後期高齢者医療制度</span>⇨P.55</P>
+                       <p><span class="announce-title">よかドック(特定健診)</span>⇨P.52</p>
+                  </div>
+                  <div class="middle">
+                       <p>保険料の支払いは口座振替で</p>
+                  </div>
+                  <div class="right">
+                       <p class="text-indent">国民健康保険料の支払いは、口座振替が原則です。毎回納付に行く手間がはぶけ、納め忘れもなく、便利で安心です。</p>
+                  </div>
+             </div>
+             <div class="qrcode">
+                     <i class="fas fa-qrcode fa-5x"></i>
+                     <div class="qrcode-contents">
+                          <p class="text-indent">
+                              ※パソコンやスマートフォン等からの口座振替の申し込みができます。対象の金融機関及び申し込みについてはホームページを
+                              ご確認ください。
+                          </p>
+                     </div>
+             </div>
+          </div><!--kokuhoのdiv-->
+    </div>
+    <!--wrapperのdiv-->
+</body>
+
+</html>
