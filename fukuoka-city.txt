@@ -1,0 +1,15 @@
+htmlファイルにに関して
+tax.html
+hoken.html
+consult.html
+の3つのファイルで構成されています。
+3つのhtmlファイルに対応するcssファイルに関しては
+reset-special.css
+style.css
+で共通のcssファイルとして対応しています。
+tax.htmlは「fukuoka-city(pdf)」フォルダの中の「fukuoka-city-tax.pdf」をデザインカンプとしてwebページに再現してみました。
+hoken.htmlは「fukuoka-city(pdf)」フォルダの中の「fukuoka-city-hoken.pdf」をデザインカンプとしてwebページに再現してみました。
+consult.html「fukuoka-city(pdf)」フォルダの中の「fukuoka-city-consult.pdf」をデザインカンプとしてwebページに再現してみました。
+上記の3つのhtmlファイルはリンクしあっていない独立したファイルです。
+上記の3つのhtmlファイルはレスポンシブ対応にはなっておりません。
+
